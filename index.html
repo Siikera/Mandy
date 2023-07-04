@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css.css">
+
+        <style>
+
+body {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  margin: -100px 0 0 -150px;
+  font-family: "Roboto", sans-serif;
+  background-color: antiquewhite;
+}
+
+h1 {
+  font-weight: 300;
+}
+
+button {
+  padding: 10px 40px;
+  border-radius: 5px;
+  font-family: "Roboto", sans-serif;
+  border: transparent;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:first-child {
+  background-color: red;
+}
+
+button:nth-child(2) {
+  background-color: red;
+}
+
+div.buttons {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 100px;
+  margin-top: 30px;
+}
+
+
+
+
+        </style>
+
+        
+
+<body>
+    <h1>Obrigado por ser a pessoa mais incrível do mundo para mim, te amo mil vezes!!</h1>
+    <h1>Clica ai!</h1>
+    <div class='buttons'>
+      <a href="https://open.spotify.com/track/1mimc5QiUuwmVYdXkWvgOQ?si=965a4fc3deb84395"><button>Clique aqui</button></a>  
+    </div>
+  </div>
+
+  <video style="margin-left: -500px; margin-top: -400px;"width="600px" height="500px" autoplay loop muted>
+    <source src="VID-20221216-WA0052.mp4" type="video/mp4">
+  </video>
+</body>
+<script>
+
+
+
+
+var moveButton = document.querySelector("button:nth-child(2)");
+
+var correctlyButton = document.querySelector("button:first-child");
+
+moveButton.addEventListener("click", function () {
+  var vertical = Math.floor(Math.random() * 400);
+  var horizontal = Math.floor(Math.random() * 400);
+  moveButton.style.position = "absolute";
+  moveButton.style.left = vertical + "px";
+  moveButton.style.top = horizontal + "px";
+});
+
+correctlyButton.addEventListener("click", function () {
+  alert("Resposta correta! Clica em ok para ver a magica!");
+});
+
+
+
+
+</script>
